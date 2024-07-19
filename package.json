@@ -7,9 +7,12 @@
   "dependencies": {
     "@remotion/cli": "4.0.182",
     "@remotion/google-fonts": "4.0.182",
+    "@remotion/lottie": "^4.0.182",
+    "lottie-react": "^2.4.0",
+    "lottie-web": "^5.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "remotion": "4.0.182"
+    "remotion": "^4.0.182"
   },
   "devDependencies": {
     "@remotion/eslint-config": "4.0.182",
@@ -23,7 +26,9 @@
     "start": "remotion studio",
     "build": "remotion render",
     "upgrade": "remotion upgrade",
-    "test": "eslint src --ext ts,tsx,js,jsx && tsc"
+    "test": "eslint src --ext ts,tsx,js,jsx && tsc",
+    "render": "npx remotion render src/RemotionVideo.js MyLottieAnimation out/video.mp4"
+
   },
   "packageManager": "npm@10.5.2"
 }
